@@ -1,0 +1,16 @@
+import { Fragment } from "react";
+import { Route, Routes } from "react-router-dom";
+import "swiper/scss";
+import Banner from "./components/movie/banner/Banner";
+import Main from "./components/movie/layout/Main";
+function App() {
+  return (
+    <Fragment>
+      <Routes>
+        <Route path="/" element={<Main></Main>} />
+      </Routes>
+    </Fragment>
+  );
+}
+
+export default App;
